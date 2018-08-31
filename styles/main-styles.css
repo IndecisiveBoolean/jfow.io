@@ -165,13 +165,13 @@ a:visited {
 .second-project-description,
 .third-project-description {
     position: absolute;
-    top: 40px;
+    top: 70px;
     left: 120px;
 
     font-size: 17px;
 
     width: 40%;
-    height: 50%;
+    height: 30%;
 }
 
 .first-project-img {
