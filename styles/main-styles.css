@@ -269,13 +269,13 @@ a:visited {
 .second-project-description,
 .third-project-description {
     position: absolute;
-    top: 40px;
-    left: 90px;
+    top: 60px;
+    left: 140px;
 
     font-size: 17px;
 
-    width: 50%;
-    height: 40%;
+    width: 45%;
+    height: 30%;
 }
 
 .technologies-used-container {
@@ -348,7 +348,7 @@ a:visited {
     border-radius: 10px;
     width: 98%;
 
-    height: 295px;
+    height: 325px;
 }
 
 .second-project,
@@ -358,7 +358,7 @@ a:visited {
 /*    border: solid 1px grey;*/
     border-radius: 10px;
 
-    height: 271px;
+    height: 325px;
     width: 98%;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -369,17 +369,17 @@ a:visited {
 .third-project-description {
     position: absolute;
     top: 40px;
-    left: 74px;
+    left: 120px;
 
     font-size: 16px;
 
-    width: 50%;
+    width: 45%;
     height: 20%;
 }
 
 .technologies-used-container {
     position: absolute;
-    bottom: 90px;
+    bottom: 80px;
 
     width: 40%;
     height: 20%;
@@ -390,7 +390,7 @@ a:visited {
 .technologies-used-header {
     text-align: center;
 
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -444,7 +444,7 @@ a:visited {
 /*    border: solid 1px grey;*/
     border-radius: 10px;
 
-    height: 271px;
+    height: 321px;
 }
 
 .second-project,
@@ -454,7 +454,7 @@ a:visited {
 /*    border: solid 1px grey;*/
     border-radius: 10px;
 
-    height: 271px;
+    height: 321px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -466,7 +466,7 @@ a:visited {
     top: 50px;
     left: 64px;
 
-    font-size: 14px;
+    font-size: 13.5px;
 
     width: 50%;
     height: 20%;
@@ -485,7 +485,7 @@ a:visited {
 .technologies-used-header {
     text-align: center;
 
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -679,7 +679,7 @@ hr {
 /*    border: solid 1px grey;*/
     border-radius: 10px;
 
-    height: 221px;
+    height: 271px;
 }
 
 .second-project,
@@ -689,7 +689,7 @@ hr {
 /*    border: solid 1px grey;*/
     border-radius: 10px;
 
-    height: 221px;
+    height: 271px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
