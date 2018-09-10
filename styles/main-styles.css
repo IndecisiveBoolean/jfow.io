@@ -83,10 +83,6 @@ a:visited {
     cursor: pointer;
 }
 
-.project-title-modal {
-  
-}
-
 .technologies-header-modal {
   position: relative;
   text-align: center;
@@ -115,7 +111,6 @@ a:visited {
 }
 
 .project-desc-modal {
-  overflow-y: auto;
   width: 90%;
   height: 50%;
   margin: 40px auto 0 auto;
@@ -581,9 +576,11 @@ hr {
   padding: 20px 50px 20px 50px;
 }
   
-.project-desc-modal {
-    display: inline;
-    margin: 0 30px;
+.tech-used-modal {
+    width: 80%;
+    max-height: 50%;
+    height: 40%;
+    overflow-y: scroll;
 }
 
 .first-project,
@@ -689,8 +686,11 @@ footer {
     margin: 0 10px;
 }
   
-.project-desc-modal {
-  overflow-y: auto;
+.tech-used-modal {
+    width: 80%;
+    max-height: 50%;
+    height: 40%;
+    overflow-y: scroll;
 }
 
 .first-project,
