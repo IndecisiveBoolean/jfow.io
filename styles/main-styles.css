@@ -100,7 +100,7 @@ a:visited {
 .tech-used-modal {
     width: 80%;
     min-height: 36%;
-    max-height: 50%;
+    max-height: 80%;
     height: auto;
     overflow: hidden;
 }
@@ -579,6 +579,11 @@ hr {
   
 .nav-bar li a {
   padding: 20px 50px 20px 50px;
+}
+  
+.project-desc-modal {
+    display: inline;
+    margin: 0 30px;
 }
 
 .first-project,
