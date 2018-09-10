@@ -25,11 +25,20 @@
                 <h4 class="header-title">Web Developer | Bug Fixer | Water Drinker </h4>
               <a href="#projects"><div class="arrow"></div></a>
             </div>
+      
+        <div class="myModal modal">      
+          <div class="tech-used-modal modal-content">
+            <h4 class="technologies-header-modal">Technologies Used<span class="close-button close">&times;</span></h4>
+            <hr class="modal-hr">
+            <p class="project-desc-modal"></p>
+          </div>
+        </div>
+      
         <div class="project-spotlight-container">
-            <div class="first-project" id="projects">
-                <h2 class="project-header-title">Nepbot</h2>
-                <p class="first-project-description">NepBot is built around the concept of increasing user interactivity within chat but allowing users to create personal, unique profiles. These profiles allow users to gain experience points by being active in chat and gain currency through the use of NepBot's commands and features. Commands range from simple image response commands which has NepBot posting images in chat to a leaderboard ranking system allowing the top 5 users to be ranked by total commands used, amount of currency, and level.</p>
-              <a href="https://github.com/IndecisiveBoolean/nepbot" target="_blank"><img class="first-project-img project-image" src="./images/nepbot-showcase-overlay.gif"></a>
+            <div class="first-project project-div" id="projects">
+              <a href="https://github.com/IndecisiveBoolean/nepbot" target="_blank"><h2 class="project-header-title title">Nepbot</h2></a>
+                <p class="first-project-description description">NepBot is built around the concept of increasing user interactivity within chat but allowing users to create personal, unique profiles. These profiles allow users to gain experience points by being active in chat and gain currency through the use of NepBot's commands and features. Commands range from simple image response commands which has NepBot posting images in chat to a leaderboard ranking system allowing the top 5 users to be ranked by total commands used, amount of currency, and level.</p>
+                <img class="first-project-img project-image modal-btn" src="./images/nepbot-showcase-overlay.gif">
                 <div class="technologies-used-container">
                     <h4 class="technologies-used-header">Technologies Used</h4>
                     <hr>
@@ -40,10 +49,10 @@
                     </ul> 
                 </div>
             </div>
-            <div class="second-project">
-                <h2 class="project-header-title">Your Weather</h2>
+            <div class="second-project project-div">
+              <a href="https://indecisiveboolean.github.io/yourweather/" target="_blank"><h2 class="project-header-title title">Your Weather</h2></a>
                 <p class="second-project-description">Using OpenWeatherMap's API get your current local weather conditions instantly! Or search for the current conditions elsewhere via Zipcode. This simply weather condition displaying webapp is built using plain ol' JavaScript, HTML, and CSS.</p>
-              <a href="https://indecisiveboolean.github.io/yourweather/" target="_blank"><img class="second-project-img project-image" src="./images/weather-proj-thumbnail.PNG"></a>
+                <img class="second-project-img project-image modal-btn" src="./images/weather-proj-thumbnail.PNG">
                 <div class="technologies-used-container">
                     <h4 class="technologies-used-header">Technologies Used</h4>
                     <hr>
@@ -54,10 +63,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="third-project">
-                <h2 class="project-header-title">ToDo</h2>
+            <div class="third-project project-div">
+              <a href="https://codepen.io/IndecisiveBoolean/full/GdpBgz" target="_blank" class="image-link"><h2 class="project-header-title title">ToDo</h2></a>
                 <p class="third-project-description">This ToDo list using JavaScript to dynamically generate list items to help keep you organized and less forgetful. It's not the most complex but it gets the job done nonetheless.  </p>
-              <a href="https://codepen.io/IndecisiveBoolean/full/GdpBgz" target="_blank"><img class="third-project-img project-image" src="./images/todo-proj-thumbnail.PNG"></a>
+                <img class="third-project-img project-image modal-btn" src="./images/todo-proj-thumbnail.PNG">
                 <div class="technologies-used-container">
 
                     <h4 class="technologies-used-header">Technologies Used</h4>
@@ -72,13 +81,13 @@
         </div>
     </body>
 
-    <footer id="contact-info">
+    <footer class="contact-info" id="contact-info">
         <p class="copyright">© 2018 Joshua Fowler. All rights reserved</p>
         <div class="footer-links">
             <a href="https://www.linkedin.com/in/joshua-fowler-1b0792169/" target="_blank" class="linkedin-link">LinkedIN</a>
             <a href="https://github.com/IndecisiveBoolean" target="_blank" class="github-link">GitHub</a>
         </div>
     </footer>
-
+    <script src="./scripts/modal-window.js"></script>
 
 </html>
