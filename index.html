@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Home</title>
+        <title>home</title>
         <meta name="home page for portfolio site" content="Portfolio Projects">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" href="./styles/main-styles.css">
@@ -14,80 +14,40 @@
         <div class="nav-bar-container fixed">
             <nav class="nav-bar">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact-info">Contact</a></li>
+                    <li onclick="windowScroll(1)">Home</li>
+                    <li onclick="windowScroll(2)">Projects</li>
+                    <li onclick="windowScroll(3)">Contact</li>
                 </ul>
             </nav>
         </div>
             <div class="landing-header" id="home">
                 <h2 class="header-name">Josh Fowler</h2>
                 <h4 class="header-title">Web Developer | Bug Fixer | Water Drinker </h4>
-              <div class="arrow" onclick="windowScroll()"></div>
+              <div class="arrow" onclick="windowScroll(2)"></div>
             </div>
       
-        <div class="myModal modal">      
-          <div class="tech-used-modal modal-content">
-            <h4 class="technologies-header-modal">Technologies Used<span class="close-button close">&times;</span></h4>
-            <hr class="modal-hr">
-            <p class="project-desc-modal"></p>
-          </div>
+      <div id="created-elements">
+        <div class="created-modal-container" id="created-modal">
+          <modal-create v-for="content in contents" v-bind:content="content"></modal-create>
         </div>
+        <div class="project-spotlight-container" id="spotlight-container">
+          <project-create class="project-create-container" v-for="content in contents" v-bind:content="content"></project-create>
+        </div>
+      </div>
       
-        <div class="project-spotlight-container">
-            <div class="first-project project-div" id="projects">
-              <a href="https://github.com/IndecisiveBoolean/nepbot" target="_blank"><h2 class="project-header-title title">Nepbot</h2></a>
-                <p class="first-project-description description">NepBot is built around the concept of increasing user interactivity within chat by allowing users to create personal, unique profiles. These profiles allow users to gain experience points by being active in chat and gain currency through the use of NepBot's commands and features. Commands range from simple image response commands which has NepBot posting images in chat to a leaderboard ranking system allowing the top 5 users to be ranked by total commands used, amount of currency, and level.</p>
-                <img class="first-project-img project-image modal-btn" src="./images/nepbot-showcase-overlay.gif">
-                <div class="technologies-used-container">
-                    <h4 class="technologies-used-header">Technologies Used</h4>
-                    <hr>
-                    <ul class="technologies-used-imgs">
-                        <li><img class="tech-img" src="./images/technology-images/javascript.svg"></li>
-                        <li><img class="tech-img" src="./images/technology-images/nodejs.svg"></li>
-                        <li><img class="tech-img" src="./images/technology-images/mongodb.svg"></li>
-                    </ul> 
-                </div>
-            </div>
-            <div class="second-project project-div">
-              <a href="https://indecisiveboolean.github.io/yourweather/" target="_blank"><h2 class="project-header-title title">Your Weather</h2></a>
-                <p class="second-project-description">Using OpenWeatherMap's API get your current local weather conditions instantly! Or search for the current conditions elsewhere via Zipcode. This simply weather condition displaying webapp is built using plain ol' JavaScript, HTML, and CSS.</p>
-                <img class="second-project-img project-image modal-btn" src="./images/weather-proj-thumbnail.PNG">
-                <div class="technologies-used-container">
-                    <h4 class="technologies-used-header">Technologies Used</h4>
-                    <hr>
-                    <ul class="technologies-used-imgs">
-                        <li><img class="tech-img" src="./images/technology-images/html-5.svg"></li>
-                        <li><img class="tech-img" src="./images/technology-images/css-3.svg"></li>
-                        <li><img class="tech-img" src="./images/technology-images/javascript.svg"></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="third-project project-div">
-              <a href="https://codepen.io/IndecisiveBoolean/full/GdpBgz" target="_blank" class="image-link"><h2 class="project-header-title title">ToDo</h2></a>
-                <p class="third-project-description">This ToDo list using JavaScript to dynamically generate list items to help keep you organized and less forgetful. It's not the most complex but it gets the job done nonetheless.  </p>
-                <img class="third-project-img project-image modal-btn" src="./images/todo-proj-thumbnail.PNG">
-                <div class="technologies-used-container">
-
-                    <h4 class="technologies-used-header">Technologies Used</h4>
-                    <hr>
-                    <ul class="technologies-used-imgs">
-                        <li><img class="tech-img" src="./images/technology-images/html-5.svg"></li>
-                        <li><img class="tech-img" src="./images/technology-images/css-3.svg"></li>
-                        <li><img class="tech-img" src="./images/technology-images/javascript.svg"></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </body>
 
     <footer class="contact-info" id="contact-info">
         <p class="copyright">© 2018 Joshua Fowler. All rights reserved</p>
-        <div class="footer-links">
-            <a href="https://www.linkedin.com/in/joshua-fowler-1b0792169/" target="_blank" class="linkedin-link">LinkedIN</a>
-            <a href="https://github.com/IndecisiveBoolean" target="_blank" class="github-link">GitHub</a>
+        <div class="footer-links-container">
+            <a href="https://www.linkedin.com/in/joshua-fowler-1b0792169/" target="_blank" class="footer-links"><img src="images/technology-images/linkedin.svg"></a>
+            <a href="https://github.com/IndecisiveBoolean" target="_blank" class="footer-links"><img src="images/technology-images/github.svg"></a>
+            <a href="https://codepen.io/IndecisiveBoolean/#" target="_blank" class="footer-links"><img src="images/technology-images/codepen.svg"></a>
         </div>
     </footer>
-    <script src="./scripts/modal-window.js"></script>
+    <script src="./scripts/element-scroll.js"></script>
+    <script src="./scripts/projects-content.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./scripts/vm.js"></script>
 
 </html>
