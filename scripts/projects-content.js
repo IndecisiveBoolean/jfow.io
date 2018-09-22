@@ -15,7 +15,7 @@ const projectContentObject = [
     projectDescription: "NepBot is built around the concept of increasing user interactivity within chat by allowing users to create personal, unique profiles. These profiles allow users to gain experience points by being active in chat and gain currency through the use of NepBot's commands and features. Commands range from simple image response commands which has NepBot posting images in chat to a leaderboard ranking system allowing the top 5 users to be ranked by total commands used, amount of currency, and level.",
     projectImageURL: "../images/nepbot-showcase-overlay.gif",
     projectSourceURL: "https://github.com/IndecisiveBoolean/nepbot",
-    technologiesImages: [techImagesSource.javascript, techImagesSource.mongodb, techImagesSource.nodejs, techImagesSource.vuejs],
+    technologiesImages: [techImagesSource.javascript, techImagesSource.mongodb, techImagesSource.nodejs],
     
   },
   {
