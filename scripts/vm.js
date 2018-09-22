@@ -63,11 +63,4 @@ const vm = new Vue({
   data: {
     contents: projectContentObject
   },
-  methods: {
-    scrollTo: function windowScroll() {
-  let projectContainer = document.querySelector(".project-div");
-  
-  projectContainer.scrollIntoView({ block: 'start',  behavior: 'smooth' });
-}
-  }
 });
