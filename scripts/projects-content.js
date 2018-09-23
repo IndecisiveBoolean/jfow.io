@@ -30,7 +30,7 @@ const projectContentObject = [
   {
     id: 3,
     title: "To Do",
-    projectDescription: "This ToDo list using JavaScript to dynamically generate list items to help keep you organized and less forgetful. It's not the most complex but it gets the job done nonetheless.",
+    projectDescription: "This simple To Do list was one of my first projects and attempts at building something using JavaScript and DOM manipulation. It's extremely simple but it does what it was designed to do, keep track of tasks. I'm currently working on a rebuild using Vue.",
     projectImageURL: "../images/todo-proj-thumbnail.PNG",
     projectSourceURL: "https://codepen.io/IndecisiveBoolean/full/GdpBgz",
     technologiesImages: [techImagesSource.html, techImagesSource.css, techImagesSource.javascript],
