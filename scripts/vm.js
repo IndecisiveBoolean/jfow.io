@@ -1,6 +1,6 @@
 
 
-Vue.component("project-create", {
+Vue.component("project-create", {//Template for project containers and function for modal window trigger on smaller displays.
   props: ["content"],
   template: `
     <div class="project-div" :id="content.id" :content="content">
@@ -24,7 +24,7 @@ Vue.component("project-create", {
     modalPopup: function() {
       const modalContainer = document.querySelector(".created-modal-container");      
       if (window.innerWidth <= 880) {
-        for (let i = 0; i < modalContainer.childNodes.length; i++) {
+        for (let i = 0; i < modalContainer.childNodes.length; i++) {//Checks for a matching id attribute for both the modal and project to display the correct modal.
           if (modalContainer.childNodes[i].id == this.content.id) {
             modalContainer.childNodes[i].style.display = "block"
           }
@@ -34,7 +34,7 @@ Vue.component("project-create", {
   }
 });
 
-Vue.component("modal-create", {
+Vue.component("modal-create", {//Template for modal window and function that that is called when modal window's X (close) is clicked to hide the modal.
   props: ["content"],
   template: `
     <div class="myModal modal" :id="content.id">      
@@ -51,7 +51,7 @@ Vue.component("modal-create", {
   methods: {
     modalClose: function() {
       let modalContainer = document.querySelector(".created-modal-container");  
-      for (let i = 0; i < modalContainer.childNodes.length; i++) {
+      for (let i = 0; i < modalContainer.childNodes.length; i++) {//Loops through all modal elements that were generated and closes them. Should only close a single modal as only a single modal can be opened at once.
         modalContainer.childNodes[i].style.display = "";   
       } 
     }
