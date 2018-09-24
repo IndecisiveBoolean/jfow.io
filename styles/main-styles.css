@@ -127,7 +127,7 @@ a:visited {
 }
 
 .nav-bar-container {
-    background-color: whitesmoke;
+    background-color: #ffffff;
     overflow: hidden;
     
     width: 100%;
@@ -135,7 +135,7 @@ a:visited {
     height: 183px;
     max-height: 3.5rem;
 
-    border-bottom: solid lightgrey 1px;
+    border-bottom: solid #3399ff 3px;
 }
 
 .nav-bar {
@@ -155,12 +155,11 @@ a:visited {
 
 .landing-header {
     text-align: center;
-/*    background-color: #f9f9f9;*/
     margin: 0px -9px 150px -9px;
     min-height: 100vh;
   
   background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 75%, rgba(255,255,255,.1) 96%, rgba(179,217,255,.9) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 75%, rgba(255,255,255,.1) 96%, rgba(179,217,255,.9) 100%);
  
 }
 

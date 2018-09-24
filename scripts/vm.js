@@ -16,7 +16,7 @@ Vue.component("project-create", {//Template for project containers and function 
                 </ul> 
             </div>
           </div>
-          <img class="project-image modal-btn" :src="content.projectImageURL" v-on:click="modalPopup(content.id)">
+          <img class="project-image modal-btn" :src="content.projectImageURL" alt="Preview image for this project." v-on:click="modalPopup(content.id)">
       </div>
     </div>
   `,
@@ -41,7 +41,7 @@ Vue.component("modal-create", {//Template for modal window and function that tha
       <div class="tech-used-modal modal-content">
         <h4 class="technologies-header-modal">Technologies Used<span class="close-button close" v-on:click="modalClose()">&times;</span></h4>
         <ul class="technologies-used-imgs">
-            <li v-for="(contents, index) in content.technologiesImages" v-bind:contents="contents.technologiesImages" ><img class="tech-img" :src="contents"></li>
+            <li v-for="(contents, index) in content.technologiesImages" v-bind:contents="contents.technologiesImages" ><img class="tech-img" :src="contents" alt="technology logo image displaying the used technology in this project."></li>
         </ul> 
         <hr class="modal-hr">
         <p class="project-desc-modal">{{ content.projectDescription }}</p>
