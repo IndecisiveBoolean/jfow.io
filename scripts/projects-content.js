@@ -12,7 +12,7 @@ const projectContentObject = [
   {
     id: 1,
     title: "Nepbot",
-    projectDescription: "NepBot is built around the concept of increasing user interactivity within chat by allowing users to create personal, unique profiles. These profiles allow users to gain experience points by being active in chat and gain currency through the use of NepBot's commands and features. Commands range from simple image response commands which has NepBot posting images in chat to a leaderboard ranking system allowing the top 5 users to be ranked by total commands used, amount of currency, and level.",
+    projectDescription: "NepBot! The project I will never finish because I can't stop coming up with features to implement. Built to increase activity in chat with unique profiles that are strictly optional, Allowing you to gain XP, levels, currency, and more. With leaderboards that rank users by any stat available and a plethora of current commands and too many planned features that will utilize the currency system, it will never be done in my mind.",
     projectImageURL: "../images/nepbot-showcase-overlay.gif",
     projectSourceURL: "https://github.com/IndecisiveBoolean/nepbot",
     technologiesImages: [techImagesSource.javascript, techImagesSource.mongodb, techImagesSource.nodejs],
