@@ -5,7 +5,8 @@ const techImagesSource = {
   mongodb: "../images/technology-images/mongodb.svg",
   mongolab: "../images/technology-images/mongolab.svg",
   nodejs: "../images/technology-images/nodejs.svg",
-  vuejs: "../images/technology-images/vue.svg"
+  vuejs: "../images/technology-images/vue.svg",
+  heroku: "../images/technology-images/heroku-icon.svg"
 };
 
 const projectContentObject = [
@@ -15,7 +16,7 @@ const projectContentObject = [
     projectDescription: "NepBot! The project I will never finish because I can't stop coming up with features to implement. Built to increase activity in chat with unique profiles that are strictly optional, Allowing you to gain XP, levels, currency, and more. With leaderboards that rank users by any stat available and a plethora of current commands and too many planned features that will utilize the currency system, it will never be done in my mind.",
     projectImageURL: "../images/nepbot-showcase-overlay.gif",
     projectSourceURL: "https://github.com/IndecisiveBoolean/nepbot",
-    technologiesImages: [techImagesSource.javascript, techImagesSource.mongodb, techImagesSource.nodejs],
+    technologiesImages: [techImagesSource.javascript, techImagesSource.mongodb, techImagesSource.nodejs, techImagesSource.heroku],
     
   },
   {

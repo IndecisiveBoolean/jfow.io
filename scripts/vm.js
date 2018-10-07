@@ -23,7 +23,7 @@ Vue.component("project-create", {//Template for project containers and function 
   methods: {
     modalPopup: function() {
       const modalContainer = document.querySelector(".created-modal-container");      
-      if (window.innerWidth <= 880) {
+      if (window.innerWidth <= 1180) {
         for (let i = 0; i < modalContainer.childNodes.length; i++) {//Checks for a matching id attribute for both the modal and project to display the correct modal.
           if (modalContainer.childNodes[i].id == this.content.id) {
             modalContainer.childNodes[i].style.display = "block"
