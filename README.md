@@ -1,6 +1,6 @@
 # jfow.io
 
-My [portfolio](https://jfow.me/) where I display some of my projects and work..
+My [portfolio](https://jfow.me/) where I display some of my projects and work.
 
 
 
