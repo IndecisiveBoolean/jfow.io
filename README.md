@@ -1,4 +1,9 @@
-## jfow.io
+# jfow.io
 
-The Github Pages hosted [personal website](https://jfow.me/) displaying my projects. Built with VueJS.
+My [portfolio](https://jfow.me/) where I display some of my projects and work..
+
+
+
+#### Built With
+* [VUE](https://vuejs.org/) - Used to template project content.
 
