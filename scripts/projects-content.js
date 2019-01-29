@@ -21,20 +21,28 @@ const projectContentObject = [
   },
   {
     id: 2,
-    title: "Your Weather",
-    projectDescription: "Using OpenWeatherMap's API get your current local weather conditions instantly! Or search for the current conditions elsewhere via Zipcode. This simply weather condition displaying webapp is built using plain ol' JavaScript, HTML, and CSS.",
-    projectImageURL: "../images/weather-proj-thumbnail.PNG",
-    projectSourceURL: "https://indecisiveboolean.github.io/yourweather/",
+    title: "Indecisive Hunter",
+    projectDescription: "Currently a simple site that will make the decision for you when you can't decide on what monster to hunt in Monster Hunter World. In the future the ability to have everything from specific monster types to armor chosen for you randomly will be available.",
+    projectImageURL: "../images/indec-hunter-proj-thumbnail.jpg",
+    projectSourceURL: "https://indecisiveboolean.github.io/indecisivehunter/",
     technologiesImages: [techImagesSource.html, techImagesSource.css, techImagesSource.javascript],
     
   },
   {
     id: 3,
-    title: "To Do",
-    projectDescription: "This simple To Do list was one of my first projects and attempts at building something using JavaScript and DOM manipulation. It's extremely simple but it does what it was designed to do, keep track of tasks. I'm currently working on a rebuild using Vue.",
-    projectImageURL: "../images/todo-proj-thumbnail.PNG",
-    projectSourceURL: "https://codepen.io/IndecisiveBoolean/full/GdpBgz",
+    title: "Your Weather",
+    projectDescription: "Using OpenWeatherMap's API get your current local weather conditions instantly! Or search for the current conditions elsewhere via Zipcode. This simply weather condition displaying webapp is built using plain ol' JavaScript, HTML, and CSS.",
+    projectImageURL: "../images/weather-proj-thumbnail.jpg",
+    projectSourceURL: "https://indecisiveboolean.github.io/yourweather/",
     technologiesImages: [techImagesSource.html, techImagesSource.css, techImagesSource.javascript],
     
+  },
+  {
+    id: 4,
+    title: "To Do",
+    projectDescription: "This simple To Do list was one of my first projects and attempts at building something using JavaScript and DOM manipulation. It's extremely simple but it does what it was designed to do, keep track of tasks. I'm currently working on a rebuild using Vue.",
+    projectImageURL: "../images/todo-proj-thumbnail.jpg",
+    projectSourceURL: "https://codepen.io/IndecisiveBoolean/full/GdpBgz",
+    technologiesImages: [techImagesSource.html, techImagesSource.css, techImagesSource.javascript],
   }
 ];
