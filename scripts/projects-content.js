@@ -9,24 +9,23 @@ const techImagesSource = {
   heroku: "../images/technology-images/heroku-icon.svg"
 };
 
-const projectContentObject = [
-  {
+const projectContentObject = [{
     id: 1,
     title: "Nepbot",
-    projectDescription: "NepBot! The project I will never finish because I can't stop coming up with features to implement. Built to increase activity in chat with unique profiles that are strictly optional, Allowing you to gain XP, levels, currency, and more. With leaderboards that rank users by any stat available and a plethora of current commands and too many planned features that will utilize the currency system, it will never be done in my mind.",
+    projectDescription: "NepBot is Built to increase activity in chat through a plethora of interactive commands. Profiles that are created on an opt-in basis allow server members to gain XP, levels, currency, and more.",
     projectImageURL: "../images/nepbot-showcase-overlay.gif",
     projectSourceURL: "https://github.com/IndecisiveBoolean/nepbot",
     technologiesImages: [techImagesSource.javascript, techImagesSource.mongodb, techImagesSource.nodejs, techImagesSource.heroku],
-    
+
   },
   {
     id: 2,
     title: "Indecisive Hunter",
-    projectDescription: "Currently a simple site that will make the decision for you when you can't decide on what monster to hunt in Monster Hunter World. In the future the ability to have everything from specific monster types to armor chosen for you randomly will be available.",
+    projectDescription: "Can't decide on what to hunt in Monster Hunter World? Let Indecisive Hunter make that decision for you!",
     projectImageURL: "../images/indec-hunter-proj-thumbnail.jpg",
     projectSourceURL: "https://indecisiveboolean.github.io/indecisivehunter/",
     technologiesImages: [techImagesSource.html, techImagesSource.css, techImagesSource.javascript],
-    
+
   },
   {
     id: 3,
@@ -35,7 +34,7 @@ const projectContentObject = [
     projectImageURL: "../images/weather-proj-thumbnail.jpg",
     projectSourceURL: "https://indecisiveboolean.github.io/yourweather/",
     technologiesImages: [techImagesSource.html, techImagesSource.css, techImagesSource.javascript],
-    
+
   },
   {
     id: 4,

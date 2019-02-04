@@ -1,53 +1,178 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-        <title>home</title>
-        <meta name="home page for portfolio site" content="Portfolio Projects">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link rel="stylesheet" href="./styles/main-styles.css">
-    </head>
+    <title>home</title>
+    <meta name="home page for portfolio site" content="Portfolio Projects" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main-styles.css" />
+  </head>
 
-    <body>
-        <div class="nav-bar-container fixed">
-            <nav class="nav-bar">
-                <ul>
-                    <li onclick="windowScroll(1)">Home</li><!-- windowScroll function uses numbers to decide which element to scroll to. See element-scroll.js for a complete explanation. -->
-                    <li onclick="windowScroll(2)">Projects</li>
-                    <li onclick="windowScroll(3)">Contact</li>
-                </ul>
-            </nav>
-        </div>
-            <div class="landing-header" id="home">
-                <h2 class="header-name">Josh Fowler</h2>
-                <h4 class="header-title">Web Developer | Bug Fixer | Water Drinker </h4>
-              <div class="arrow" onclick="windowScroll(2)"></div>
-            </div>
-      
-      <div id="created-elements">
-        <div class="created-modal-container" id="created-modal">
-          <modal-create v-for="content in contents" v-bind:content="content"></modal-create>
-        </div>
-        <div class="project-spotlight-container" id="spotlight-container">
-          <project-create class="project-create-container" v-for="content in contents" v-bind:content="content"></project-create>
+  <body>
+    <div class="nav-bar-container fixed">
+      <nav class="nav-bar">
+        <ul>
+          <li onclick="windowScroll(1)">Home</li>
+          <!-- windowScroll function uses numbers to decide which element to scroll to. See element-scroll.js for a complete explanation. -->
+          <li onclick="windowScroll(2)">Projects</li>
+          <li onclick="windowScroll(3)">Contact</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="landing-header" id="particles-js">
+      <img
+        class="header-image"
+        src="./images/0.jpg"
+        alt="image of Josh Fowler"
+      />
+      <h2 class="header-name">Hi, I'm Josh.</h2>
+      <h4 class="header-title">a front-end developer.</h4>
+      <div class="header-bottom-nav-links">
+        <a
+          href="https://github.com/IndecisiveBoolean"
+          class="github-header-link bottom-header-link"
+          >Github</a
+        >
+        <a
+          href="https://www.linkedin.com/in/joshua-fowler-1b0792169/"
+          class="linkedin-header-link bottom-header-link"
+          >LinkedIN</a
+        >
+        <a
+          onclick="windowScroll(4)"
+          class="about-header-link bottom-header-link"
+          >About</a
+        >
+      </div>
+    </div>
+
+    <div id="created-elements">
+      <div class="created-modal-container" id="created-modal">
+        <modal-create
+          v-for="content in contents"
+          v-bind:content="content"
+        ></modal-create>
+      </div>
+      <div class="project-spotlight-container" id="spotlight-container">
+        <project-create
+          class="project-create-container"
+          v-for="content in contents"
+          v-bind:content="content"
+        ></project-create>
+      </div>
+    </div>
+    <p class="find-more-link">
+      Find more of my work on my
+      <a
+        class="find-more-github-highlight"
+        href="https://github.com/IndecisiveBoolean"
+        >Github</a
+      >
+    </p>
+
+    <div class="aboutme-section">
+      <h1 class="aboutme-header">About Me</h1>
+      <p class="aboutme-entry">
+        Since I was young I've been fascinated by various technologies. While
+        that used to be limited to the video game industry a few years ago I
+        finally dived into the programming side of things and discovered another
+        side of my passion involved creating the front end for websites or
+        services.
+      </p>
+    </div>
+
+    <div class="tools">
+      <div class="tools-div">
+        <h1>What I Use</h1>
+        <div class="tools-images-div">
+          <div>
+            <img
+              class="tools-used-imgs"
+              src="./images/technology-images/visual-studio-code.svg"
+            />
+            <p>Visual Studio Code</p>
+          </div>
+          <div>
+            <img
+              class="tools-used-imgs"
+              src="./images/technology-images/balsamiq-logo-screen.svg"
+            />
+            <p>Balsamiq Wireframing</p>
+          </div>
+          <div>
+            <img
+              class="tools-used-imgs"
+              src="./images/technology-images/Adobe_Photoshop_CC_icon.svg"
+            />
+            <p>Photoshop</p>
+          </div>
+          <div>
+            <img
+              class="tools-used-imgs"
+              src="./images/technology-images/javascript.svg"
+            />
+            <p>JavaScript</p>
+          </div>
+          <div>
+            <img
+              class="tools-used-imgs"
+              src="./images/technology-images/react.svg"
+            />
+            <p>React</p>
+          </div>
+          <div>
+            <img
+              class="tools-used-imgs"
+              src="./images/technology-images/vue.svg"
+            />
+            <p>VUE</p>
+          </div>
         </div>
       </div>
-      
-    </body>
+    </div>
+  </body>
 
-    <footer class="contact-info" id="contact-info">
-        <p class="copyright">© 2019 Joshua Fowler. All rights reserved</p>
-        <div class="footer-links-container">
-            <a href="https://www.linkedin.com/in/joshua-fowler-1b0792169/" target="_blank" class="footer-links"><img src="images/technology-images/linkedin.svg" alt="LinkedIN logo image linked to LinkedIN profile"></a>
-            <a href="https://github.com/IndecisiveBoolean" target="_blank" class="footer-links"><img src="images/technology-images/github.svg" alt="Github logo image linked to Github profile"></a>
-            <a href="https://codepen.io/IndecisiveBoolean/#" target="_blank" class="footer-links"><img src="images/technology-images/codepen.svg" alt="Codepen logo image linked to Codepen profile"></a>
-        </div>
-    </footer>
-    <script src="./scripts/element-scroll.js"></script>
-    <script src="./scripts/projects-content.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-    <script src="./scripts/vm.js"></script>
-
+  <footer class="contact-info" id="contact-info">
+    <p class="copyright">© 2019 Joshua Fowler. All rights reserved</p>
+    <div class="footer-links-container">
+      <a
+        href="https://www.linkedin.com/in/joshua-fowler-1b0792169/"
+        target="_blank"
+        class="footer-links"
+        ><img
+          src="images/technology-images/linkedin.svg"
+          alt="LinkedIN logo image linked to LinkedIN profile"
+      /></a>
+      <a
+        href="https://github.com/IndecisiveBoolean"
+        target="_blank"
+        class="footer-links"
+        ><img
+          src="images/technology-images/github.svg"
+          alt="Github logo image linked to Github profile"
+      /></a>
+      <a
+        href="https://codepen.io/IndecisiveBoolean/#"
+        target="_blank"
+        class="footer-links"
+        ><img
+          src="images/technology-images/codepen.svg"
+          alt="Codepen logo image linked to Codepen profile"
+      /></a>
+    </div>
+  </footer>
+  <script src="./scripts/element-scroll.js"></script>
+  <script src="http://localhost:8000/particles.js-master/particles.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"
+    defer="defer"
+  ></script>
+  <script src="./scripts/projects-content.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+  <script src="./scripts/vm.js"></script>
 </html>
