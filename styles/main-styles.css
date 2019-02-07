@@ -5,12 +5,6 @@
   margin: 0;
 }
 
-html {
-  position: relative;
-  overflow-x: hidden;
-  min-height: 100%;
-}
-
 body {
   margin: 0;
 }
@@ -163,11 +157,15 @@ a:visited {
   cursor: pointer;
 } */
 
+#particles-js canvas {
+  background-color: #3399ff;
+  min-height: 100vh;
+}
+
 .landing-header {
   text-align: center;
   margin: 0px -9px 150px -9px;
-  min-height: 100vh;
-  background-color: #3399ff;
+  /* min-height: 100vh; */
 }
 
 .header-image {
@@ -834,3 +832,11 @@ a:visited {
 }
 
 /* /MEDIA QUERIES */
+
+html {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100%;
+  visibility: visible;
+  opacity: 1;
+ }
