@@ -1,5 +1,5 @@
 * {
-  font-family: 'Nunito Sans', sans-serif, Georgia;
+  font-family: "Nunito Sans", sans-serif, Georgia;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -65,7 +65,6 @@ a:visited {
   width: auto;
   /* Could be more or less, depending on screen size */
   height: 60%;
-
 }
 
 /* The Close Button */
@@ -90,8 +89,6 @@ a:visited {
   text-align: center;
   margin: -5px 0px 10px 15px;
 }
-
-
 
 .modal-hr {
   display: block;
@@ -120,7 +117,6 @@ a:visited {
   margin: 40px auto 40px auto;
   overflow-y: auto;
 }
-
 
 /* .fixed {
   position: fixed;
@@ -157,15 +153,19 @@ a:visited {
   cursor: pointer;
 } */
 
+#particles-js {
+  position: relative;
+}
+
 #particles-js canvas {
   background-color: #3399ff;
   min-height: 100vh;
+  max-height: 100vh;
 }
 
 .landing-header {
   text-align: center;
   margin: 0px -9px 150px -9px;
-  /* min-height: 100vh; */
 }
 
 .header-image {
@@ -321,7 +321,6 @@ a:visited {
   height: auto;
   margin: 30px auto 0px;
   text-align: center;
-
 }
 
 .technologies-used-header {
@@ -447,7 +446,6 @@ a:visited {
 /* MEDIA QUERIES */
 
 @media (max-width: 1079px) {
-
   .technologies-used-imgs {
     display: flex;
     justify-content: space-around;
@@ -626,11 +624,9 @@ a:visited {
     text-align: center;
     margin: 15px 35px;
   }
-
 }
 
 @media (max-width: 920px) {
-
   .technologies-used-imgs {
     display: flex;
     justify-content: space-around;
@@ -828,7 +824,6 @@ a:visited {
     height: 30px;
     margin: 15px 90px;
   }
-
 }
 
 /* /MEDIA QUERIES */
@@ -839,4 +834,4 @@ html {
   min-height: 100%;
   visibility: visible;
   opacity: 1;
- }
+}
