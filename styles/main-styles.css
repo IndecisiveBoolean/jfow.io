@@ -128,7 +128,7 @@ a:visited {
 }
 
 
-.fixed {
+/* .fixed {
   position: fixed;
   top: 0;
 
@@ -161,7 +161,7 @@ a:visited {
   font-size: 20px;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
 .landing-header {
   text-align: center;
@@ -214,6 +214,7 @@ a:visited {
   flex-direction: row;
   justify-content: space-between;
   font-size: 30px;
+  font-weight: 600;
   width: 50%;
   margin: 0 auto;
 }
