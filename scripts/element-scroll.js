@@ -3,6 +3,7 @@ function windowScroll(event) { //Handles all scroll events on the main page to r
   let footer = document.querySelector(".contact-info");
   let home = document.querySelector(".landing-header");
   let about = document.querySelector(".aboutme-section");
+  // cases 1 - 3 are currently unused. Original navigation bar needs to be redesigned and implemented later.
   switch (event) {
     case 1:
       home.scrollIntoView({
