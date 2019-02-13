@@ -29,19 +29,20 @@ const projectContentObject = [{
   },
   {
     id: 3,
+    title: "Rural ISP Concept",
+    projectDescription: "A fully responsive home page concept for a fake, rural focused Internet Service Provider called TIER ONE. As this was built with a smaller ISP in mind I focused on simplicity and prioritizing the information the user would want most.",
+    projectImageURL: "../images/showcase_images/isp-concept-proj-thumbnail.jpg",
+    projectSourceURL: "https://indecisiveboolean.github.io/local-isp-concept/",
+    technologiesImages: [techImagesSource.html, techImagesSource.css, techImagesSource.javascript],
+
+  },
+  {
+    id: 4,
     title: "Your Weather",
     projectDescription: "Using OpenWeatherMap's API get your current local weather conditions instantly! Or search for the current conditions elsewhere via Zipcode. This simply weather condition displaying webapp is built using plain ol' JavaScript, HTML, and CSS.",
     projectImageURL: "../images/showcase_images/weather-proj-thumbnail.jpg",
     projectSourceURL: "https://indecisiveboolean.github.io/yourweather/",
     technologiesImages: [techImagesSource.html, techImagesSource.css, techImagesSource.javascript],
 
-  },
-  {
-    id: 4,
-    title: "To Do",
-    projectDescription: "This simple To Do list was one of my first projects and attempts at building something using JavaScript and DOM manipulation. It's extremely simple but it does what it was designed to do, keep track of tasks. I'm currently working on a rebuild using Vue.",
-    projectImageURL: "../images/showcase_images/todo-proj-thumbnail.jpg",
-    projectSourceURL: "https://codepen.io/IndecisiveBoolean/full/GdpBgz",
-    technologiesImages: [techImagesSource.html, techImagesSource.css, techImagesSource.javascript],
   }
 ];
