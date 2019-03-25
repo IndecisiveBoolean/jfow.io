@@ -1,202 +1,131 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <style>
-      html {
+
+<head>
+  <style>
+    html {
         visibility: hidden;
         opacity: 0;
       }
-    </style>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Josh Fowler | Portfolio</title>
-    <meta name="home page for portfolio site" content="Portfolio Projects" />
-    <link rel="icon" type="image/svg" href="./images/other/favico.png" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Nunito+Sans|Raleway"
-    />
-    <link rel="stylesheet" href="./styles/main-styles.css" />
-  </head>
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Josh Fowler | Portfolio</title>
+  <meta name="home page for portfolio site" content="Portfolio Projects" />
+  <link rel="icon" type="image/svg" href="./images/other/favico.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans|Raleway" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./styles/main-styles.css" />
+</head>
 
-  <body>
-    <div class="landing-header" id="particles-js">
-      <div class="header-content">
-        <img
-          class="header-image"
-          src="./images/other/developer-image.jpg"
-          alt="image of Josh Fowler"
-        />
-        <h2 class="header-name">Hi, I'm Josh.</h2>
-        <h4 class="header-title">a front-end developer.</h4>
+<body>
+  <div class="landing-header" id="particles-js">
+    <div class="header-content">
+      <img class="header-image" src="./images/other/developer-image.jpg" alt="image of Josh Fowler" />
+      <h2 class="header-name">Hi, I'm Josh.</h2>
+      <h4 class="header-title">a front-end developer.</h4>
 
-        <div class="header-bottom-nav-links">
-          <a
-            href="https://github.com/IndecisiveBoolean"
-            class="github-header-link bottom-header-link"
-            >Github</a
-          >
-          <a
-            href="https://www.linkedin.com/in/joshua-fowler-1b0792169/"
-            class="linkedin-header-link bottom-header-link"
-            >LinkedIN</a
-          >
-          <!-- windowScroll function uses numbers to decide which element to scroll to. See element-scroll.js for a complete explanation. -->
-          <a
-            onclick="windowScroll(4)"
-            class="about-header-link bottom-header-link"
-            >About</a
-          >
-        </div>
+      <div class="header-bottom-nav-links">
+        <a href="https://github.com/IndecisiveBoolean" class="github-header-link bottom-header-link">Github</a>
+        <a href="https://www.linkedin.com/in/joshua-fowler-1b0792169/" class="linkedin-header-link bottom-header-link">LinkedIN</a>
+        <!-- windowScroll function uses numbers to decide which element to scroll to. See element-scroll.js for a complete explanation. -->
+        <a onclick="windowScroll(4)" class="about-header-link bottom-header-link">About</a>
       </div>
     </div>
+  </div>
 
-    <div id="created-elements">
-      <div class="created-modal-container" id="created-modal">
-        <modal-create
-          v-for="content in contents"
-          v-bind:content="content"
-        ></modal-create>
-      </div>
-      <div class="project-spotlight-container" id="spotlight-container">
-        <project-create
-          class="project-create-container"
-          v-for="content in contents"
-          v-bind:content="content"
-        ></project-create>
-      </div>
+  <div id="created-elements">
+    <div class="created-modal-container" id="created-modal">
+      <modal-create v-for="content in contents" v-bind:content="content"></modal-create>
     </div>
-    <p class="find-more-link">
-      Find more of my work on my
-      <a
-        class="find-more-github-highlight"
-        href="https://github.com/IndecisiveBoolean"
-        >Github</a
-      >
+    <div class="project-spotlight-container" id="spotlight-container">
+      <project-create class="project-create-container" v-for="content in contents" v-bind:content="content"></project-create>
+    </div>
+  </div>
+  <p class="find-more-link">
+    Find more of my work on my
+    <a class="find-more-github-highlight" href="https://github.com/IndecisiveBoolean">Github</a>
+  </p>
+
+  <div class="aboutme-section">
+    <h1 class="aboutme-header">About Me</h1>
+    <p class="aboutme-entry">
+      Since I was young I've been fascinated by various technologies that
+      power our daily lives. While that fascination used to be limited to the
+      video game industry and computer hardware, a few years ago I finally
+      dived into the programming side of things. With that leap I've
+      discovered another side of my passion, one that involved creating front
+      end interfaces, websites, or simply building things I think could be
+      useful and fun.
     </p>
+  </div>
 
-    <div class="aboutme-section">
-      <h1 class="aboutme-header">About Me</h1>
-      <p class="aboutme-entry">
-        Since I was young I've been fascinated by various technologies that
-        power our daily lives. While that fascination used to be limited to the
-        video game industry and computer hardware, a few years ago I finally
-        dived into the programming side of things. With that leap I've
-        discovered another side of my passion, one that involved creating front
-        end interfaces, websites, or simply building things I think could be
-        useful and fun.
-      </p>
-    </div>
-
-    <div class="tools">
-      <h1>My Primary Toolset</h1>
-      <div class="tools-images-div">
-        <div>
-          <img
-            class="tools-used-imgs"
-            src="./images/technology_images/html-5.svg"
-          />
-          <p>HTML</p>
-        </div>
-        <div>
-          <img
-            class="tools-used-imgs"
-            src="./images/technology_images/css-3.svg"
-          />
-          <p>CSS</p>
-        </div>
-        <div>
-          <img
-            class="tools-used-imgs"
-            src="./images/technology_images/javascript.svg"
-          />
-          <p>JavaScript</p>
-        </div>
-        <div>
-          <img
-            class="tools-used-imgs"
-            src="./images/technology_images/visual-studio-code.svg"
-          />
-          <p>Visual Studio Code</p>
-        </div>
-        <div>
-          <img
-            class="tools-used-imgs"
-            src="./images/technology_images/balsamiq-logo-screen.svg"
-          />
-          <p>Wireframing</p>
-        </div>
+  <div class="tools">
+    <h1>My Primary Toolset</h1>
+    <div class="tools-images-div">
+      <div>
+        <a class="tools-used-imgs" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"><img class="tools-used-imgs" src="./images/technology_images/html-5.svg" /></a>
+        <p>HTML</p>
       </div>
-      <h1>Current Focus</h1>
-      <div class="tools-images-div">
-        <div>
-          <img
-            class="tools-used-imgs"
-            src="./images/technology_images/nodejs-icon.svg"
-          />
-          <p>Node.js</p>
-        </div>
-        <div>
-          <img
-            class="tools-used-imgs"
-            src="./images/technology_images/react.svg"
-          />
-          <p>React</p>
-        </div>
-        <div>
-          <img
-            class="tools-used-imgs"
-            src="./images/technology_images/vue.svg"
-          />
-          <p>VUE</p>
-        </div>
-        <div>
-          <img
-            class="tools-used-imgs"
-            src="./images/technology_images/mongodb.svg"
-          />
-          <p>NoSQL</p>
-        </div>
+      <div>
+        <a class="tools-used-imgs" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"><img class="tools-used-imgs" src="./images/technology_images/css-3.svg" /></a>
+        <p>CSS</p>
+      </div>
+      <div>
+        <a class="tools-used-imgs" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img class="tools-used-imgs" src="./images/technology_images/javascript.svg" /></a>
+        <p>JavaScript</p>
+      </div>
+      <div>
+        <a class="tools-used-imgs" target="_blank" href="https://code.visualstudio.com/"><img class="tools-used-imgs" src="./images/technology_images/visual-studio-code.svg" /></a>
+        <p>Visual Studio Code</p>
+      </div>
+      <div>
+        <a class="tools-used-imgs" target="_blank" href="https://balsamiq.com/"><img class="tools-used-imgs" src="./images/technology_images/balsamiq-logo-screen.svg" /></a>
+        <p>Wireframing</p>
       </div>
     </div>
-  </body>
-  <footer class="contact-info" id="contact-info">
-    <p class="copyright">© 2019 Joshua Fowler. All rights reserved</p>
-    <div class="footer-links-container">
-      <a
-        href="https://www.linkedin.com/in/joshua-fowler-1b0792169/"
-        target="_blank"
-        class="footer-links"
-        ><img
-          src="images/technology_images/linkedin.svg"
-          alt="LinkedIN logo image linked to LinkedIN profile"
-      /></a>
-      <a
-        href="https://github.com/IndecisiveBoolean"
-        target="_blank"
-        class="footer-links"
-        ><img
-          src="images/technology_images/github.svg"
-          alt="Github logo image linked to Github profile"
-      /></a>
-      <a
-        href="https://codepen.io/IndecisiveBoolean/#"
-        target="_blank"
-        class="footer-links"
-        ><img
-          src="images/technology_images/codepen.svg"
-          alt="Codepen logo image linked to Codepen profile"
-      /></a>
+    <h1>Current Focus</h1>
+    <div class="tools-images-div">
+      <div>
+        <a class="tools-used-imgs" target="_blank" href="https://nodejs.org/en/"><img class="tools-used-imgs" src="./images/technology_images/nodejs-icon.svg" /></a>
+        <p>Node.js</p>
+      </div>
+      <div>
+        <a class="tools-used-imgs" target="_blank" href="https://reactjs.org/"><img class="tools-used-imgs" src="./images/technology_images/react.svg" /></a>
+        <p>React</p>
+      </div>
+      <div>
+        <a class="tools-used-imgs" target="_blank" href="https://vuejs.org/"><img class="tools-used-imgs" src="./images/technology_images/vue.svg" /></a>
+        <p>VUE</p>
+      </div>
+      <div>
+        <a class="tools-used-imgs" target="_blank" href="https://www.mongodb.com/"><img class="tools-used-imgs" src="./images/technology_images/mongodb.svg" /></a>
+        <p>NoSQL</p>
+      </div>
     </div>
-  </footer>
+  </div>
+
   <script src="./scripts/element-scroll.js"></script>
   <script src="./particles.js-master/particles.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"
-    defer="defer"
-  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer="defer"></script>
   <script src="./scripts/projects-content.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
   <script src="./scripts/vm.js"></script>
+
+
+</body>
+
+<footer class="contact-info" id="contact-info">
+  <p class="copyright">© 2019 Joshua Fowler. All rights reserved</p>
+  <div class="footer-links-container">
+    <a href="https://www.linkedin.com/in/joshua-fowler-1b0792169/" target="_blank" class="footer-links"><img src="images/technology_images/linkedin.svg"
+        alt="LinkedIN logo image linked to LinkedIN profile" /></a>
+    <a href="https://github.com/IndecisiveBoolean" target="_blank" class="footer-links"><img src="images/technology_images/github.svg"
+        alt="Github logo image linked to Github profile" /></a>
+    <a href="https://codepen.io/IndecisiveBoolean/#" target="_blank" class="footer-links"><img src="images/technology_images/codepen.svg"
+        alt="Codepen logo image linked to Codepen profile" /></a>
+  </div>
+</footer>
+
 </html>
