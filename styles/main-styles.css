@@ -397,7 +397,7 @@ a:visited {
 
 .tools-images-div div {
   text-align: center;
-  margin: 15px 35px;
+  margin: 15px 5px;
 }
 
 .tools h1 {
@@ -435,7 +435,7 @@ a:visited {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1099px) {
+@media (max-width: 1299px) {
   .project-div {
     display: flex;
     flex-direction: column;
